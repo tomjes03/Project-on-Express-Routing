@@ -8,13 +8,13 @@ const timeChecker = (req, res, next) => {
 
   //To check if the user is accessing during the week
   if (dayOfTheWeek === 0 || dayOfTheWeek === 6 ){
-    return res.status(403).send("Sorry, Agba Dev's site only available on weekdays")
+    return res.status(403).send("Sorry, Kodewit Bata site is  only available on weekdays")
     console.log("Site Uvailable");
   }
 
   //To check if the user is accessing during the week
   if (hourOfTheday < 9 || hourOfTheday > 17 ){
-    return res.status(403).send("Sorry, Agba Dev's site only available from 9am to 5pm")
+    return res.status(403).send("Sorry,  Kodewit Bata site is only available from 9am to 5pm")
     console.log("Site Uvailable");
   }
 
